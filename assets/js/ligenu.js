@@ -43,7 +43,7 @@ async function fetchCurrentHourRange() {
   try {
     const currentDateTime = new Date();
     const currentHour = currentDateTime.getHours();
-    const nextHour = (currentHour + 1) % 24; // Calculate the next hour
+    const nextHour = (currentHour + 1) % 24;
     currentHourElement.textContent = `${currentHour}:00 - ${nextHour}:00`;
   } catch (error) {
     console.error('Der opstod en fejl:', error);
